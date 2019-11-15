@@ -1,0 +1,20 @@
+<p>We have quotes by:</p>
+<table>
+    <tr>
+        <th>Author</th>
+        <th>Quote</th>
+        <th>Actions Available</th>
+    </tr>
+    <tr *ngFor="let author of allAuthors">
+        <td>
+            <p>{{ author.name }}</p>
+        </td>
+        <td>
+            <p>{{ author.quote }}</p>
+        </td>
+        <td>
+            <button (click)="editAuthor(author._id)">Edit</button>
+            <button (click)="delete(author._id)">Delete</button>
+        </td>
+    </tr>
+</table>

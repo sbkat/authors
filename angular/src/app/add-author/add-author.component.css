@@ -1,0 +1,18 @@
+#form {
+    border: 1px solid black;
+    width: 40%;
+    padding: 15px;
+}
+
+input {
+    display: block;
+    margin: 10px;
+}
+
+button {
+    margin: 3px;
+}
+
+.error {
+    color: red;
+}

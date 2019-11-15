@@ -1,0 +1,14 @@
+<div>
+    <p *ngIf="errorMsg" class="error">
+      {{ errorMsg }}
+    </p>
+</div>
+<form class="inline" (submit)="submitAdd()" id="form">
+    <p>Add a new author:</p>
+    <label for="name">Name:</label>
+    <input type="text" name="name" [(ngModel)]="newAuthor.name">
+    <label for="quote">Quote:</label>
+    <input type="text" name="quote" [(ngModel)]="newAuthor.quote">
+    <button type="submit">Add!</button>
+    <button (click)="cancel()">Cancel</button>
+</form>
