@@ -6,6 +6,6 @@ app.use(express.json());
 
 require('./server/config/mongoose');
 require('./server/config/routes')(app);
-app.use(express.static( __dirname + '/public/dist/angular' ));
+app.use(express.static( __dirname + '/angular/dist/angular' ));
 
 app.listen(5000, () => console.log("listening on port 5000"));
